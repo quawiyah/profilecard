@@ -1,0 +1,105 @@
+body{
+  background-color: hsl(148, 38%, 91%);
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding-top: 6%;
+  font-weight: 700;
+  font-size: 16px;
+  color: hsl(187, 24%, 22%);
+  font-family:  "Space Mono", monospace;
+}
+.{
+  align-items: center;
+  font-family:  "Space Mono", monospace;
+}
+.whole{
+  text-align: left;
+  background-color: white;  
+  width: 40%;
+  margin: auto;
+  padding: 25px;
+  border-radius: 10px;
+}
+.name{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2px;
+}
+.query{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2px;
+}
+.name input{
+  height: 40px;
+  width: 360px;
+  border-radius: 7px;
+  border: 1px hsl(169, 82%, 27%) solid;
+}
+.mail input{
+  height: 40px;
+  width: 97%;
+  border-radius: 7px;
+  border: 1px hsl(169, 82%, 27%) solid;
+}
+textarea{
+  width: 97%;
+  height: 100px;
+  border-radius: 7px;
+  border: 1px hsl(169, 82%, 27%) solid;
+}
+.general{
+  border: 1px hsl(169, 82%, 27%) solid;
+  width: 360px;
+  height: 40px;
+  border-radius: 7px;
+}
+button{
+  width: 97%;
+  height: 45px;
+  color: white;
+  background-color: hsl(169, 82%, 27%);
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+} 
+.error-message {
+    color: red;
+    font-size: 0.85rem;
+    display: none;
+    margin-top: 0.3rem;
+}
+
+@media (max-width: 768px){
+  .whole{
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .form-group {
+      width: 100%;
+  }
+
+  #submit {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .whole{
+      flex-direction: column;
+      padding: 5px;
+  }
+
+  .form-group {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  #submit {
+      width: 100%;
+      font-size: 14px;
+  }
+
+}

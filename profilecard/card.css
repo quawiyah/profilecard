@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+        url(house.jpg) center no-repeat;
+    background-size: cover;    
+}
+.card{
+    width: 340px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+    margin: auto;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.image-top{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+}
+.profile-image{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -110px;
+    z-index: 10;
+    border: 5px solid white;
+}
+.card h1{
+    font-family: 'Ubuntu' sans-serif;
+    font-size: 22px;
+    color: #555;
+    margin: 10px;
+}
+.job{ 
+    font-family: 'Montserrat', sans-serif;
+    color: #777;
+    font-weight: 300
+}
+.about-me{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    width: 90%;
+    margin: 15px 0;
+    font-size: italic;
+    color: #444;
+    text-align: center;
+}
+.card button{
+    width: 120px;
+    padding: 7px;
+    margin: 10px 0;
+    background-color: tomato;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: white;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+.social-icons{
+    width: 150px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0 20px 0;
+    border-top: 1px solid #999;
+    padding-top: 20px;
+}
+.social-icons i{
+    font-size: 18px;
+}
+.bxl-facebook{
+    color: #3b5999;
+}
+.bxl-instagram{
+    color: rgb(189, 43, 17);
+}
+.bxl-whatsapp{
+    color: green;
+}
+.bxl-gmail{
+    color: red;
+}
+.clock{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    background: rgb(35, 58, 58);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 10%;
+}
